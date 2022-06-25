@@ -1,3 +1,11 @@
+# Imersão Full Cycle - Desafio 2 (React.js)
+
+Página construída em react para exibir os posts disponíveis na api https://jsonplaceholder.typicode.com/posts
+
+- Foram utilizados cards para listar os posts.
+- Para exibir os detalhes do post, foi utilizado modal.
+- Algumas dependencias foram instaladas com opção --force, pois estavam reclamando do react não estar acima da versão 17 (sendo que esse projeto usa 18.2.0).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
