@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 
 export type PostItemProps = {
@@ -7,14 +7,16 @@ export type PostItemProps = {
 
 export const PostItem: FunctionComponent<PostItemProps> = ({ title } : PostItemProps) => {
   return (
-  <Card sx={{ width: 720 }}>
-    <CardActionArea>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {title}
-        </Typography>
-      </CardContent>
-    </CardActionArea>
-  </Card>
+    <Box pb={1}>
+      <Card sx={{ width: 720 }} >
+        <CardActionArea>
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {title}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Box>
   );
 };

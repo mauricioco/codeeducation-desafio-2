@@ -1,9 +1,13 @@
-import './App.css';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import { PostList } from './components/PostList';
+import theme from './theme';
 
 function App() {
   return (
-    <PostList />
+    <ThemeProvider theme={theme}>
+      <CssBaseline/>
+      <PostList />
+    </ThemeProvider>
   );
 }
 
