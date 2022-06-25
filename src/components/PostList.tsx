@@ -1,7 +1,7 @@
 import { List } from "@mui/material";
 import { FunctionComponent, useEffect, useState } from "react";
 import { Post } from "../util/models";
-import { PostItem } from "./PostItem";
+import { PostListItem } from "./PostListItem";
 
 const API_URL = process.env.REACT_APP_API_URL as string;
 
@@ -16,10 +16,12 @@ export const PostList: FunctionComponent = () => {
   }, [posts])
 
   return (
-    <List>
-      {posts.map((p, ) => (
-        <PostItem title={p.title}/>
-      ))}
-    </List>
+    <div>
+      <List>
+        {posts.map((p, ) => (
+          <PostListItem key={p.id} title={p.title} body={p.body} />
+        ))}
+      </List>
+    </div>
   );
 };
